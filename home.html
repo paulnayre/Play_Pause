@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>Homepage</title>
+</head>
+<br>
+<br>
+        <script>
+            function dancing() {
+                var image = document.getElementById('dance');
+                let num1 = parseInt(document.getElementById("num1").value);
+                let num2 = parseInt(document.getElementById("num2").value);
+                let sum = num1 + num2;
+                
+                if (sum >= 100) {
+                    image.src = "dance.gif";
+                } else {
+                    image.src = "dance.png";
+                }
+            }
+        </script>
+  
+    
+</script>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                   
+        <div class="temperature-converter">
+            <h2>If-else Statements</h2>
+            <div class="inputbox">
+                <input type="number" id="num1" placeholder="Enter First Number" required>
+            </div>
+            <br>
+            <div class="inputbox">
+                <input type="number" id="num2" placeholder="Enter Second Number" required>
+            </div>
+            
+            <button type= "button" onclick="dancing()">Submit</button>
+            <img id="dance" src="dance.png">
+
+        <script>
+            function dancing() {
+                var image = document.getElementById('dance');
+                let num1 = parseInt(document.getElementById("num1").value);
+                let num2 = parseInt(document.getElementById("num2").value);
+                let sum = num1 + num2;
+                
+                if (sum >= 100) {
+                    image.src = "dance.gif";
+                } else {
+                    image.src = "dance.png";
+                }
+            }
+        </script>
+            <button type="button" onclick="logout()">Logout</button>
+            <script>
+        function logout() {
+            let response = confirm("Are you sure you want to log out?");
+            if (response) {
+                window.location.href = 'index.html'; 
+            }
+        }
+    </script>
+        </div>
+            </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
